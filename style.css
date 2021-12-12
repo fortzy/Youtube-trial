@@ -126,7 +126,7 @@ li a{
     border: none;
 }
 .hero{
-    background: rgb(235, 234, 234);
+    background: rgb(243, 243, 243);
     display: grid;
     grid-template-columns: repeat(4, minmax(90px, 1fr));
     grid-gap: 40px;
@@ -165,4 +165,51 @@ li a{
 }
 p{
     color: gray;
+}
+@media (max-width: 1030px){
+    .hero{
+        grid-template-columns: repeat(3, minmax(90px, 1fr));
+        grid-gap: 20px;
+    }
+    .tube{
+        width: 15%;
+    }
+    .final_h{
+        width: 100%;
+    }
+}
+@media (max-width: 990px){
+    .header_button{
+        padding: 5px;
+    }
+    
+}
+@media (max-width: 910px){
+    form .left{
+        height: auto !important;
+        background: none;
+        width: 10%;
+    }
+    .hero{
+        grid-template-columns: repeat(2, minmax(90px, 1fr));
+    }
+    .tube{
+        width: 20%;
+    }
+    .get{
+        display: none;
+    }
+}
+@media (max-width: 810px){
+    .header_2{
+        display: none;
+    }
+    h3 img{
+        width: 20%;
+    }
+}
+@media (max-width: 500px){
+    .hero{
+        grid-template-columns: repeat(1, minmax(90px, 1fr));
+    }
 }

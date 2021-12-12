@@ -51,6 +51,9 @@ input{
     width: 90%;
     border-right: none;
 }
+input:focus{
+    border: 1px solid tomato;
+}
 .initial_h{
     display: flex;
     flex-direction: row;
@@ -207,9 +210,88 @@ p{
     h3 img{
         width: 20%;
     }
+    .initial_h{
+        padding: 0 5px;
+    }
+}
+@media (max-width: 700px){
+    .initial_h{
+        padding: 10px 5px;
+    }
+    input{
+        display: none;
+    }
+    .left{
+        background: none !important;
+        border: none !important;
+    }
+    ul{
+        display: flex;
+        width: 40%;
+    }
+    form{
+        justify-content: center;
+    }
+}
+@media (max-width: 560px){
+    .go{
+        display: none;
+    }   
+    .tube{
+        width: 30%;
+    }
 }
 @media (max-width: 500px){
     .hero{
         grid-template-columns: repeat(1, minmax(90px, 1fr));
+        grid-row-gap: 30px;
+        padding: 5px;
+    }
+    .initial_h li{
+        padding: 0 5px;
+    }
+    .leave{
+        display: none;
+    }
+    .right{
+        display: none !important;
+    }
+    form{
+        justify-content: flex-end !important;
+    }
+    .left{
+        margin-right: 5px;
+    }
+}
+@media (max-width: 420px){
+    .next{
+        display: none;
+    }
+    .tube{
+        width: 50%;
+    }
+    .new{
+        display: none !important;
+    }
+    ul{
+        width: 20%;
+    }
+}
+@media (max-width: 370px){
+    .blank{
+        display: none;
+    }
+}
+@media (max-width: 340px){
+    .tube{
+        width: 80%
+    }
+    .hero{
+        padding: 10px !important;
+    }
+}
+@media (max-width: 280px){
+    .mix{
+        display: none;
     }
 }
